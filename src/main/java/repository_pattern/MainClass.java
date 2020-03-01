@@ -1,12 +1,17 @@
-package repository_pattern.applications;
+package repository_pattern;
 
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import repository_pattern.domain.model.product.ProductRepository;
 import repository_pattern.domain.usecase.ProductUseCase;
 
-@Configuration
-public class UseCaseConfiguration {
+@SpringBootApplication
+public class MainClass {
+
+    public static void main(String[] args) {
+        SpringApplication.run(MainClass.class, args);
+    }
 
     @Bean
     public ProductUseCase productUseCase(ProductRepository productRepository) {

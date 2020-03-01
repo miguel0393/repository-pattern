@@ -7,7 +7,7 @@ import lombok.Data;
 @Builder(toBuilder = true)
 public class Product {
 
-    private final String id;
-    private final String name;
-    private final Double price;
+    private String id;
+    private String name;
+    private Double price;
 }
