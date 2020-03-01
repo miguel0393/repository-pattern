@@ -6,10 +6,11 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 import repository_pattern.domain.model.product.Product;
 import repository_pattern.domain.model.product.ProductRepository;
-import repository_pattern.infrastructure.helpers.AdapterOperations;
+import repository_pattern.infrastructure.helpers.mongo.AdapterOperations;
 
 @Repository
-public class ProductMongoAdapter extends AdapterOperations<Product, String, ProductDataRepository>
+public class ProductMongoAdapter
+        extends AdapterOperations<Product, String, ProductDataRepository>
         implements ProductRepository {
 
     @Autowired
