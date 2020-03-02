@@ -7,7 +7,8 @@ import lombok.Data;
 @Builder(toBuilder = true)
 public class Supplier {
 
-    private final String id;
-    private final String name;
+    private String id;
+    private String name;
+    private String email;
 
 }

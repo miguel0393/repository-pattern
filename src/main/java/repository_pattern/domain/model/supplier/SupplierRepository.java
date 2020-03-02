@@ -4,5 +4,5 @@ import reactor.core.publisher.Mono;
 
 public interface SupplierRepository {
 
-    Mono<Supplier> getSupplierById();
+    Mono<Supplier> getSupplierById(String id);
 }
